@@ -1,0 +1,33 @@
+{
+"name": "pyhydroquebec",
+"version": "master",
+"slug": "pyhydroquebec",
+"description": "Get your consumption data from your HydroQuebec account inside a hass addon",
+"url":"https://github.com/titilambert/pyhydroquebec",
+"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+"startup": "application",
+"boot": "auto",
+"map": [
+  "config:rw"
+  ],
+"services": [
+  "mqtt:need"
+  ],
+"options": {
+  "MQTT_USERNAME": "MQTTUSER",
+  "MQTT_PASSWORD": "MQTTPASSWORD",
+  "MQTT_HOST": "FQDN/IP",
+  "MQTT_PORT": "MQTTPORT",
+  "CONFIG": "/config/pyhq-config.yaml",
+  "PYHQ_OUTPUT": "MQTT"
+},
+"schema": {
+  "MQTT_USERNAME": "str",
+  "MQTT_PASSWORD": "str",
+  "MQTT_HOST": "str",
+  "MQTT_PORT": "int",
+  "CONFIG": "str",
+  "PYHQ_OUTPUT": "str"
+},
+"image": "registry.gitlab.com/ttblt-hass/pyhydroquebec/mqtt"
+}

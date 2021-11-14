@@ -1,0 +1,7 @@
+timeout: 30
+frequency: 10800
+accounts:
+  - username: rene.purcell@gmail.com
+    password: xxxx
+    contracts:
+      - id: 222255777
