@@ -1,6 +1,6 @@
 # pyhydroquebec-hass-addons
 
-HASS addon code for pyhydroquebec integration
+HASS addon code for pyhydroquebec integration. For now the image doesn't work on ARM, should be fixed soon.
 
 Work in progress, please report any issue.
 
