@@ -1,6 +1,6 @@
 {
 "name": "pyhydroquebec",
-"version": "master",
+"version": "0.021",
 "slug": "pyhydroquebec",
 "description": "Get your consumption data from your HydroQuebec account inside a hass addon",
 "url":"https://github.com/titilambert/pyhydroquebec",
@@ -14,20 +14,29 @@
   "mqtt:need"
   ],
 "options": {
-  "MQTT_USERNAME": "MQTTUSER",
-  "MQTT_PASSWORD": "MQTTPASSWORD",
-  "MQTT_HOST": "FQDN/IP",
-  "MQTT_PORT": "MQTTPORT",
-  "CONFIG": "/config/pyhq-config.yaml",
-  "PYHQ_OUTPUT": "MQTT"
+  "PYHQ_USER":  "HQ account user",
+  "PYHQ_PASSWORD": "HQ account password",
+  "PYHQ_OUTPUT": "MQTT",
+  "PYHQ_CONTRACT": "HQ contract number",
+  "mqtt_username": "MQTTUSER",
+  "mqtt_password": "MQTTPASSWORD",
+  "mqtt_host": "FQDN/IP",
+  "mqtt_port": "1883",
+  "pyhq_output": "MQTT",
+  "pyhqconfig": "/config/pyhq-config.yaml"
+
 },
 "schema": {
-  "MQTT_USERNAME": "str",
-  "MQTT_PASSWORD": "str",
-  "MQTT_HOST": "str",
-  "MQTT_PORT": "int",
-  "CONFIG": "str",
-  "PYHQ_OUTPUT": "str"
+  "PYHQ_USER": "str",
+  "PYHQ_PASSWORD": "str",
+  "PYHQ_OUTPUT": "str",
+  "PYHQ_CONTRACT": "str",
+  "mqtt_username": "str",
+  "mqtt_password": "str",
+  "mqtt_host": "str",
+  "mqtt_port": "int",
+  "pyhq_output": "str",
+  "pyhqconfig": "str"
 },
-"image": "registry.gitlab.com/ttblt-hass/pyhydroquebec/mqtt"
+"image": "registry.hub.docker.com/arsenick/pyhydroquebechassaddons"
 }

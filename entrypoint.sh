@@ -1,11 +1,14 @@
-#!/usr/bin/with-contenv bashio
+#!/usr/bin/env bashio
 
 export MQTT_USERNAME=$(bashio::config 'mqtt_username')
 export MQTT_PASSWORD=$(bashio::config 'mqtt_password')
 export MQTT_HOST=$(bashio::config 'mqtt_host')
 export MQTT_PORT=$(bashio::config 'mqtt_port')
 export CONFIG=$(bashio::config 'pyhqconfig')
-export PYHQ_OUTPUT=$(bashio::config 'pyhq_output')
+export PYHQ_USER=$(bashio::config 'PYHQ_USER')
+export PYHQ_PASSWORD=$(bashio::config 'PYHQ_PASSWORD')
+export PYHQ_CONTRACT=$(bashio::config 'PYHQ_CONTRACT')
+export PYHQ_OUTPUT=$(bashio::config 'PYHQ_OUTPUT')
 
 # Check user and password
 if [ -z "$PYHQ_USER" ] || [ -z "$PYHQ_PASSWORD" ]  && [ "$PYHQ_OUTPUT" != "MQTT" ]
@@ -44,7 +47,7 @@ fi
 # Config
 if [ -z "$CONFIG" ]
 then
-    export CONFIG="/etc/pyhydroquebec/pyhydroquebec.yaml"
+    export CONFIG="/config/pyhq-config.yaml"
 fi
 
 if [ "$PYHQ_OUTPUT" == "MQTT" ]
