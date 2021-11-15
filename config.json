@@ -1,8 +1,8 @@
 {
-"name": "pyhydroquebec",
-"version": "0.021",
+"name": "pyhydroquebec Add-on",
+"version": "0.024",
 "slug": "pyhydroquebec",
-"description": "Get your consumption data from your HydroQuebec account inside a hass addon",
+"description": "Get your consumption data from your HydroQuebec account inside this hass addon",
 "url":"https://github.com/titilambert/pyhydroquebec",
 "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
 "startup": "application",
