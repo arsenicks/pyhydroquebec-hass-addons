@@ -1,13 +1,13 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
 build_from:
-  aarch64: "ghcr.io/home-assistant/aarch64-base:3.14"
-  amd64: "ghcr.io/home-assistant/amd64-base:3.14"
-  armhf: "ghcr.io/home-assistant/armhf-base:3.14"
-  armv7: "ghcr.io/home-assistant/armv7-base:3.14"
-  i386: "ghcr.io/home-assistant/i386-base:3.14"
+  aarch64: "ghcr.io/home-assistant/aarch64-base-python:3.14"
+  amd64: "ghcr.io/home-assistant/amd64-base-python:3.14"
+  armhf: "ghcr.io/home-assistant/armhf-base-python:3.14"
+  armv7: "ghcr.io/home-assistant/armv7-base-python:3.14"
+  i386: "ghcr.io/home-assistant/i386-base-python:3.14"
 labels:
   org.opencontainers.image.title: "Home Assistant Add-on: PYHydroQuebec"
-  org.opencontainers.image.description: "Example add-on to use as a blueprint for new add-ons."
+  org.opencontainers.image.description: "PYHydroQuebec add-on."
   org.opencontainers.image.source: "https://github.com/titilambert/pyhydroquebec"
   org.opencontainers.image.licenses: "Apache License 2.0"
 args:

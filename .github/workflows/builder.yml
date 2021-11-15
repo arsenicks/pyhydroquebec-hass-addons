@@ -7,10 +7,10 @@ env:
 on:
   push:
     branches:
-      - main
+      - autobuild
   pull_request:
     branches:
-      - main
+      - autobuild
 
 jobs:
   init:
