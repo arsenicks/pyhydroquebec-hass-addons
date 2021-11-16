@@ -15,4 +15,5 @@ Once completed, go into the pyhydroquebec addon and click install.
 # Setup/Configuration
 
 First, create a file named "pyhq-config.yaml" in your hass config directory. You can use the pyhq-config.yaml included in this directory as example.
+
 Then add all the required configurations item in the Config tab of the add on. There's currently two places where you have to enter your HQ user/pass and contract number(config files and inside the config tab of the addon), this should be fixed soon.
