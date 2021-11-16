@@ -7,5 +7,6 @@ export MQTT_PORT=$(bashio::config 'mqtt_port')
 export ROOT_TOPIC=$(bashio::config 'mqtt_root_topic')
 export MQTT_NAME=$(bashio::config 'mqtt_name')
 export CONFIG=$(bashio::config 'pyhqconfig')
+export LOG_LEVEL=$(bashio::config 'pyhqlog')
 
 mqtt_pyhydroquebec
