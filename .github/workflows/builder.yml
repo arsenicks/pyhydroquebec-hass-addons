@@ -1,4 +1,4 @@
-name: Builder
+name: Hass add-on Container Image Builder
 
 env:
   BUILD_ARGS: "--test"
