@@ -1,6 +1,6 @@
 {
 "name": "pyhydroquebec Add-on",
-"version": "0.1",
+"version": "0.2",
 "slug": "pyhydroquebec",
 "description": "Get your consumption data from your HydroQuebec account to your MQTT using this hass addon",
 "url":"https://github.com/arsenicks/pyhydroquebec-hass-addons/tree/main/pyhydroquebec",
@@ -20,6 +20,8 @@
   "mqtt_password": "MQTTPASSWORD",
   "mqtt_host": "FQDN/IP",
   "mqtt_port": "1883",
+  "mqtt_root_topic": "homeassistant",
+  "mqtt_name": "pyhydroquebec",
   "pyhq_output": "MQTT",
   "pyhqconfig": "/config/pyhq-config.yaml"
 
@@ -33,6 +35,8 @@
   "mqtt_password": "str",
   "mqtt_host": "str",
   "mqtt_port": "int",
+  "mqtt_root_topic": "str",
+  "mqtt_name": "str",
   "pyhq_output": "str",
   "pyhqconfig": "str"
 },
