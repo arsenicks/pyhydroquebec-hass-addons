@@ -7,10 +7,10 @@ env:
 on:
   push:
     branches:
-      - autobuild
+      - fix-mqtt
   pull_request:
     branches:
-      - autobuild
+      - fix-mqtt
 
 jobs:
   init:
