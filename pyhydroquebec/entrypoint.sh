@@ -8,5 +8,4 @@ export ROOT_TOPIC=$(bashio::config 'mqtt_root_topic')
 export MQTT_NAME=$(bashio::config 'mqtt_name')
 export CONFIG=$(bashio::config 'pyhqconfig')
 
-
 mqtt_pyhydroquebec
