@@ -7,10 +7,10 @@ env:
 on:
   push:
     branches:
-      - fix-mqtt
+      - main
   pull_request:
     branches:
-      - fix-mqtt
+      - main
 
 jobs:
   init:
