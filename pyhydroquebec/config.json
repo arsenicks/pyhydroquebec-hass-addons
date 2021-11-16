@@ -1,6 +1,6 @@
 {
 "name": "pyhydroquebec Add-on",
-"version": "0.025",
+"version": "0.026",
 "slug": "pyhydroquebec",
 "description": "Get your consumption data from your HydroQuebec account to your MQTT using this hass addon",
 "url":"https://github.com/arsenicks/pyhydroquebec-hass-addons/tree/main/pyhydroquebec",
