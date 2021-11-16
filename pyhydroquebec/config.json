@@ -38,5 +38,5 @@
   "pyhq_output": "str",
   "pyhqconfig": "str"
 },
-"image": "registry.hub.docker.com/arsenick/pyhydroquebechassaddons"
+"image": "ghcr.io/arsenick/{arch}-pyhydroquebechassaddons"
 }
