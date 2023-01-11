@@ -1,3 +1,32 @@
+
+Hi, I've neglected this repository for too long and I should have updated this before. 
+
+----
+
+
+
+***This project is now unsupported because the pyhydroquebec python library I used has been renamed and reworked from scratch.***
+
+
+----
+
+Don't feel bad, it's now really better and there's a addon you can use in HA too. I will update the readme here to reflect those information.
+
+New project website: https://hydroqc.ca/fr/
+Gitlab project: https://gitlab.com/hydroqc
+Hass-addon repository: https://gitlab.com/hydroqc/hydroqc-hass-addons
+
+There's a Discord if you have questions or want to contribute: https://discord.gg/2NrWKC7sfF
+
+I'll close this issue and the other than update the readme with the information above.
+
+Thanks, have a great day!
+
+
+----
+
+
+
 # pyhydroquebec-hass-addons
 
 HASS addon code for pyhydroquebec integration.
